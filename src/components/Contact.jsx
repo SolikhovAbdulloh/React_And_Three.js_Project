@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Map from "./Map";
+import MapComponent from "./Map";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 const Section = styled.div`
@@ -105,7 +105,6 @@ export default function Contact() {
           </Form>
         </Left>
         <Right>
-          <Map />
         </Right>
       </Contiener>
     </Section>
