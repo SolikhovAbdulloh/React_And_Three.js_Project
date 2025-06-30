@@ -3,7 +3,12 @@ import { FaSearch } from "react-icons/fa";
 
 const Section = styled.div`
   display: flex;
+  width: 90%;
   justify-content: center;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 const Container = styled.div`
   width: 1400px;
@@ -11,6 +16,9 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 const Links = styled.div`
   display: flex;
@@ -32,6 +40,9 @@ const List = styled.ul`
   display: flex;
   gap: 30px;
   list-style: none;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 const ListItem = styled.li`
   cursor: pointer;
@@ -45,12 +56,13 @@ const Button = styled.button`
   background-color: rebeccapurple;
   color: white;
 `;
+
 function Navbar() {
   return (
     <Section>
       <Container>
         <Links>
-          <Logo src="../../public/icons/logo.png" />
+          <Logo src="/icons/logo.png" />
           <List>
             <ListItem>Home</ListItem>
             <ListItem>Studio</ListItem>

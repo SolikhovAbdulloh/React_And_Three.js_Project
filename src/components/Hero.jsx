@@ -9,6 +9,9 @@ const Section = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  @media only screen and (max-width: 768px) {
+    height: 200vh;
+  }
 `;
 const Contiener = styled.div`
   height: 100vh;
@@ -19,6 +22,9 @@ const Contiener = styled.div`
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 const Left = styled.div`
   flex: 3;
@@ -40,7 +46,10 @@ const Line = styled.p`
 const Subtitle = styled.h2`
   color: #76345b;
 `;
-const Decs = styled.h3``;
+const Decs = styled.h3`
+  max-width: 250px;
+  font-size: 30px;
+`;
 const Button = styled.button`
   background-color: #da4ea2;
   height: 50px;
@@ -65,7 +74,10 @@ const Img = styled.img`
   right: 0;
   margin: auto;
   animation: animate 1s ease infinite alternate;
-
+  @media only screen and (max-width: 768px) {
+    width: 400px;
+    height: 400px;
+  }
   @keyframes animate {
     100% {
       transform: translateY(30px);
@@ -105,7 +117,7 @@ export default function Hero() {
               />
             </Sphere>
           </Canvas>
-          <Img src="../../public/icons/moon.png" />
+          <Img src="icons/moon.png" />
         </Rigth>
       </Contiener>
     </Section>

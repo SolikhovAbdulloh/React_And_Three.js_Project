@@ -20,9 +20,15 @@ const Left = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  @media only screen and (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 const Right = styled.div`
   flex: 2;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 const Title = styled.h2`
   font-weight: 200;
@@ -32,6 +38,9 @@ const Form = styled.form`
   flex-direction: column;
   gap: 25px;
   width: 500px;
+  @media only screen and (max-width: 768px) {
+    width: 300px;
+  }
 `;
 const Button = styled.button`
   background-color: #bb438c;
